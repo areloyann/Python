@@ -8,7 +8,7 @@ def classify_number(numbers):
             odd_numbers.append(num)
     return even_numbers, odd_numbers
 if __name__== "__main__":
-    user_input = input("Enter a list of numbers separated by spaces (e.g., '1 2 3 4 5'): ")
+    user_input = input("Enter a list of numbers separated by spaces: ")
     number_list=[int(x) for x in user_input.split()]
     even_numbers, odd_numbers = classify_number(number_list)
     print("Even numbers:", even_numbers)
